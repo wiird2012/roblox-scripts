@@ -5,7 +5,7 @@ Remember to put this in autoexec!! recommended to use loadstring version for les
 Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
 ]]
 
-if game.PlaceId == 155615604 then
+if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
 
 print("[SB Autofarm] Entering Arena...")
 if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
@@ -68,6 +68,6 @@ end
 
 else
 
-print("[SB Autofarm] Invalid Game!")
+print("[SB Autofarm] Invalid/Unsupported Game!")
 
 end
