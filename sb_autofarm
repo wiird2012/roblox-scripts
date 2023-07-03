@@ -5,7 +5,10 @@ Remember to put this in autoexec!! recommended to use loadstring version for les
 Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
 ]]
 
-if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
+
+if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then --Check for valid places
+
+repeat wait() until game.ContentProvider.RequestQueueSize > 0 --Waits until the game is fully loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
 
 --Auto enter Arena
 
@@ -31,7 +34,7 @@ end
 
 --Server Hop
 
-print("[SB AutoFarm] Attempting Server Hop...")
+warn("[SB AutoFarm] Attempting Server Hop...")
 
 local Http = game:GetService("HttpService")
 local TPS = game:GetService("TeleportService")
@@ -58,7 +61,7 @@ wait(20)
 
 while true do
 
-print("[SB AutoFarm] Attempting Server Hop (again)...")
+warn("[SB AutoFarm] Attempting Server Hop (again)...")
 
 wait(20) --secs before retrying serverhop, edit to ur liking
 	local _place = game.PlaceId
@@ -79,6 +82,6 @@ end
 
 else
 
-print("[SB AutoFarm] Invalid/Unsupported Game!")
+warn("[SB AutoFarm] Invalid/Unsupported Game!\nSupported Games: SB Regular, Killstreak Only, No OneShots")
 
 end
