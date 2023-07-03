@@ -8,8 +8,10 @@ Remember to put this in autoexec!! recommended to use loadstring version for les
 
 if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then --Check for valid places
 
-repeat wait() until game.ContentProvider.RequestQueueSize > 0 --Waits until the game is fully loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
-wait(3) --Failsafe
+game.Loaded:Wait() --Waits until the game is fully loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
+
+wait(3) --Failsafe (remove for faster farming, will make more unstable)
+
 --Auto enter Arena
 
 print("[SB AutoFarm] Entering Arena...")
