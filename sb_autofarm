@@ -8,7 +8,9 @@ Remember to put this in autoexec!! recommended to use loadstring version for les
 if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
 
 --Auto enter Arena
-print("[SB Autofarm] Entering Arena...")
+
+print("[SB AutoFarm] Entering Arena...")
+
 if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
 	repeat task.wait(.005)                                
 		firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
@@ -17,7 +19,9 @@ if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Pla
 end
 
 --Auto grab Slapples
-print("[SB Autofarm] Grabbing Slapples...")
+
+print("[SB AutoFarm] Grabbing Slapples...")
+
 for Index, Instance in next, workspace.Arena.island5.Slapples:GetDescendants() do
 	if Instance.ClassName == "TouchTransmitter" then
 		firetouchinterest(game.Players.LocalPlayer.Character.Head, Instance.Parent, 0)
@@ -26,7 +30,9 @@ for Index, Instance in next, workspace.Arena.island5.Slapples:GetDescendants() d
 end
 
 --Server Hop
-print("[SB Autofarm] Attempting Server Hop...")
+
+print("[SB AutoFarm] Attempting Server Hop...")
+
 local Http = game:GetService("HttpService")
 local TPS = game:GetService("TeleportService")
 local Api = "https://games.roblox.com/v1/games/"
@@ -47,10 +53,13 @@ until Server
 TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 
 --Serverhop again in case the other one didn't work (Fallback)
+
 wait(20)
 
 while true do
-print("[SB Autofarm] Attempting Server Hop (again)...")
+
+print("[SB AutoFarm] Attempting Server Hop (again)...")
+
 wait(20) --secs before retrying serverhop, edit to ur liking
 	local _place = game.PlaceId
 	local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
@@ -70,6 +79,6 @@ end
 
 else
 
-print("[SB Autofarm] Invalid/Unsupported Game!")
+print("[SB AutoFarm] Invalid/Unsupported Game!")
 
 end
