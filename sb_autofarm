@@ -47,6 +47,7 @@ until Server
 TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 
 --Serverhop again in case the other one didn't work (Fallback)
+wait(20)
 
 while true do
 print("[SB Autofarm] Attempting Server Hop (again)...")
