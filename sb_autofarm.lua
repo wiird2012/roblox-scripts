@@ -49,7 +49,7 @@ until Server
 TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 
 
-wait(20)
+wait(10) --secs before retrying serverhop, edit to ur liking
 
 while true do
 
