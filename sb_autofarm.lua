@@ -4,6 +4,13 @@ if not game:IsLoaded() then
 game.Loaded:Wait() --waits until the game is loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
 end
 
+local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+	
 local char = game.Players.LocalPlayer.Character
 if not char then continue end
 	
@@ -29,12 +36,6 @@ end
 
 warn("[SB AutoFarm] Attempting Server Hop...")
 
-local Http = game:GetService("HttpService")
-local TPS = game:GetService("TeleportService")
-local Api = "https://games.roblox.com/v1/games/"
-
-local _place = game.PlaceId
-local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
 function ListServers(cursor)
    local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
    return Http:JSONDecode(Raw)
@@ -56,8 +57,6 @@ while true do
 warn("[SB AutoFarm] Attempting Server Hop (again)...")
 
 wait(10) --secs before retrying serverhop, edit to ur liking
-	local _place = game.PlaceId
-	local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
 	function ListServers(cursor)
 	   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
 	   return Http:JSONDecode(Raw)
