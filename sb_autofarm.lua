@@ -14,6 +14,7 @@ local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
 local char = game.Players.LocalPlayer.Character
 if not char then continue end
 	
+
 print("[SB AutoFarm] Entering Arena...")
 
 if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
