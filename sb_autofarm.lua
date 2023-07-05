@@ -1,18 +1,12 @@
---[[
-Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
-Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
-Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
-Remember to put this in autoexec!! recommended to use loadstring version for less chance of serverhop failing
-]]
+if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
 
-wait(10) --Failsafe (remove for faster farming)
+if not game:IsLoaded() then
+game.Loaded:Wait() --waits until the game is loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
+end
 
-if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then --Check for valid places
-
-game.Loaded:Wait() --Waits until the game is fully loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
-
---Auto enter Arena
-
+local char = game.Players.LocalPlayer.Character
+if not char then continue end
+	
 print("[SB AutoFarm] Entering Arena...")
 
 if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
@@ -22,7 +16,6 @@ if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Pla
 	until game.Players.LocalPlayer.Character:FindFirstChild("entered")
 end
 
---Auto grab Slapples
 
 print("[SB AutoFarm] Grabbing Slapples...")
 
@@ -33,7 +26,6 @@ for Index, Instance in next, workspace.Arena.island5.Slapples:GetDescendants() d
 	end
 end
 
---Server Hop
 
 warn("[SB AutoFarm] Attempting Server Hop...")
 
@@ -56,7 +48,6 @@ until Server
 
 TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 
---Serverhop again in case the other one didn't work (Fallback)
 
 wait(20)
 
@@ -64,7 +55,7 @@ while true do
 
 warn("[SB AutoFarm] Attempting Server Hop (again)...")
 
-wait(20) --secs before retrying serverhop, edit to ur liking
+wait(10) --secs before retrying serverhop, edit to ur liking
 	local _place = game.PlaceId
 	local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
 	function ListServers(cursor)
