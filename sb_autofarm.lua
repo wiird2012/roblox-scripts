@@ -17,11 +17,11 @@ if not char then continue end
 
 print("[SB AutoFarm] Entering Arena...")
 
-if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
+if not game.Players.LocalPlayer.Character:WaitForChild("entered") and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then                            
 	repeat task.wait(.005)                                
 		firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
 		firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
-	until game.Players.LocalPlayer.Character:FindFirstChild("entered")
+	until game.Players.LocalPlayer.Character:WaitForChild("entered")
 end
 
 
