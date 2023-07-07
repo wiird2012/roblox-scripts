@@ -1,24 +1,20 @@
 if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
 
-if not game:IsLoaded() then
-game.Loaded:Wait() --waits until the game is loaded to execute (remove if you want faster farming, removing this will make the autofarm more unstable)
-end
-
 local Http = game:GetService("HttpService")
 local TPS = game:GetService("TeleportService")
 local Api = "https://games.roblox.com/v1/games/"
 
 local _place = game.PlaceId
 local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
-	
+
 local char = game.Players.LocalPlayer.Character
-if not char then continue end
-	
+if not char then task.wait() end
+
 
 print("[SB AutoFarm] Entering Arena...")
 
-if not game.Players.LocalPlayer.Character:WaitForChild("entered") and game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then                            
-	repeat task.wait(.005)                                
+if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then                            
+	repeat task.wait(.005)
 		firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
 		firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
 	until game.Players.LocalPlayer.Character:WaitForChild("entered")
