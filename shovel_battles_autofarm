@@ -7,5 +7,5 @@ end
 wait(10)
 player:Kick("Rejoining\nif this fails report it")
 while wait(1) do
-TeleportService:Teleport(game.PlaceId, player)
+game.TeleportService:Teleport(game.PlaceId, player)
 end
