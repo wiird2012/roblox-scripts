@@ -8,7 +8,7 @@ getgenv().bhopinfo = {
   evpatch=true, --stops disabling jumping
 }
 if not funcs then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/exceptional0/scr/main/funcs.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wiird2012/roblox-scripts/master/funcs.lua"))()
 end
 
 if bhopinfo.evpatch then
