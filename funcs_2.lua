@@ -293,12 +293,6 @@ local function tablematch(x,y)
 for ii,vv in next,x do if y[ii] and y[ii]~=vv then return false end end
 return true
 end
-options=options or {}
-funcs.wfcofclass(parent: Instance, class: string, RELEASEDATE: number?, recursive: boolean?, options: table?)
-options={
-reqprop={"Name"="amongus"} --only return if Instance.Name=amongus
-reqhprop={"HiddenImpostor"="Coral"} -- only return if <hidden> Instance.HiddenImpostor="Coral"
-}
 --infinite yield fe code (rj)
 getgenv().rj = function() --infinite yield
 funcs.lplr:Kick("\nRejoining...")
