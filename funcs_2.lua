@@ -294,21 +294,6 @@ for ii,vv in next,x do if y[ii] and y[ii]~=vv then return false end end
 return true
 end
 options=options or {}
-local vrs={}
-vrs.child = parent:FindFirstChildWhichIsA(class,recursive);
-if vrs.child and (not options.reqprop or tablematch(getproperties(vrs.child),options.reqprop)) and (not options.reqhprop or tablematch(getproperties(vrs.child),options.reqhprop)) then return vrs.child end
-vrs.bndable=Instance.new("BindableEvent")
-vrs.wfcfunc=function(x)
-if x:IsA(class) and (not options.reqprop or tablematch(getproperties(x),options.reqprop)) and (not options.reqhprop or tablematch(gethiddenproperties(x),options.reqhprop)) then
-vrs.bndable:Fire(x)
-end
-end
-vrs.evf=function(x) vrs.child=nil for i,v in next,vrs do if typeof(v)=='Instance' then funcs.deb:AddItem(v,0) elseif typeof(v)=='RBXScriptConnection' then v:Disconnect() end vrs[i]=nil end vrs=nil return x end
-vrs.evc=vrs.bndable.Event:Connect(vrs.evf)
-vrs.con=parent[recursive and "DescendantAdded" or "ChildAdded"]:Connect(vrs.wfcfunc)
-   if type(RELEASEDATE)~="boolean" then task.delay(RELEASEDATE or 10,vrs.bndable.Fire,vrs.bndable) end
-return vrs.bndable.Event:Wait()
-end
 --[[
 funcs.wfcofclass(parent: Instance, class: string, RELEASEDATE: number?, recursive: boolean?, options: table?)
 options={
