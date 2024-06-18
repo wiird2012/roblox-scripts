@@ -301,3 +301,4 @@ if #playerservice:GetPlayers() <= 1 then tpserv:Teleport(game.PlaceId, funcs.lpl
 end
 --charfuncs ^
 getgenv().funcs_loaded = true
+end
