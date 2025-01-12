@@ -1,5 +1,5 @@
 # roblox-scripts
-Collection of the scripts I published. (includes skidded :trollface:) 
+Collection of the scripts I published. (includes skidded) 
 
 Scripts in archives subfolder are either: skidded, old, obsolete or all of them.
 Avoid using scripts from there.
