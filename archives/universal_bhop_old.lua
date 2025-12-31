@@ -1,3 +1,5 @@
+--Old but should work, tested in Evade but doesn't work 30/12/2025
+
 getgenv().bhopinfo = {
   CurrentVel = 0, -- DONT TOUCH
   VelCap = 3,
