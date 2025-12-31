@@ -1,4 +1,4 @@
---Old & not mine
+--Old, untested and not mine
 
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
