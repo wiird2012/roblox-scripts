@@ -1,3 +1,5 @@
+--Old, untested and not mine
+
 -- STORE IN AUTOEXEC FOLDER
 repeat wait() until game:IsLoaded()
 
