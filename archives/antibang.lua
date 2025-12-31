@@ -1,4 +1,4 @@
---Old & untested & not mine
+--Old, untested & not mine
 
 -- Made by AnthonyIsntHere
 -- Idk who needs this but this will tp u to the void killing people who use bang on you if they dont use workspace.FallenPartsDestroyHeight = 0/0 to bypass void limit
