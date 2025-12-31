@@ -1,3 +1,5 @@
+--Old & broken
+
 --Credits to puer aeternus on v3rm
 do
 getgenv().funcs = funcs or {}
