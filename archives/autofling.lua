@@ -1,3 +1,5 @@
+--Old, untested and not mine
+
 -- Made by AnthonyIsntHere (got leaked and skids are claiming it as their own LOL)
 -- Now supports r15 originalsize rescale!
 
