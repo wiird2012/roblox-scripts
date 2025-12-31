@@ -1,4 +1,4 @@
---Old & not tested
+----Old, untested and not mine
 
 -- Made in 2 minutes, don't feel like improving cuz lazy
 -- This isn't detected on most games, unless they have some shitty anti cheat that detects you setting velocity on other players
