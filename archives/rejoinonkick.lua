@@ -1,3 +1,5 @@
+--Old & not mine
+
 --This script makes it so that whenever you get kicked you will rejoin the same server
 
 local TeleportService = game:GetService("TeleportService")
