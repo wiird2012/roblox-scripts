@@ -2,7 +2,7 @@ _G.jedalfarm = true -- Switch to false if you want to stop the script
 
 --[[
 HOW TO USE:
-Load in to Desert Bus, execute the script.
+Load in to Desert Bus and execute the script.
 It should start working as long you get near the gift boxes
 Idling near the 5 gifts in the second floor should get you the most
 
