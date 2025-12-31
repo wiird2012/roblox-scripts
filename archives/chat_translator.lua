@@ -1,3 +1,5 @@
+--really old
+
 --[[
     Message Translator
     Made by Aim, updated by cli
