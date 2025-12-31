@@ -1,3 +1,5 @@
+--Old, untested and not mine
+
 -- This script prevents client anti cheats from detecting guis
 -- Place in autoexec folder
 
