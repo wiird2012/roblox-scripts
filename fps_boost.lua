@@ -1,10 +1,11 @@
+--Old script, fixed & tested 30/12/2025 21:41 GMT-3
+
 local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 local g = game
 local w = g.Workspace
 local l = g.Lighting
 local t = w.Terrain
 sethiddenproperty(l,"Technology",2)
-sethiddenproperty(t,"Decoration",false)
 t.WaterWaveSize = 0
 t.WaterWaveSpeed = 0
 t.WaterReflectance = 0
