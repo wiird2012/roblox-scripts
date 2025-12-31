@@ -1,3 +1,5 @@
+--Old & not tested
+
 if not funcs then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wiird2012/roblox-scripts/master/archives/funcs_fixed.lua"))()
 end
