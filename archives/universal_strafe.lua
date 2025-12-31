@@ -1,5 +1,5 @@
 if not funcs then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/wiird2012/roblox-scripts/master/funcs_2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wiird2012/roblox-scripts/master/archives/funcs_fixed.lua"))()
 end
 
 getgenv().bhopinfo = {
