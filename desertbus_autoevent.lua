@@ -6,7 +6,7 @@ Load in to Desert Bus, execute the script.
 It should start working as long you get near the gift boxes
 Idling near the 5 gifts in the second floor should get you the most
 
-You need a total of 640 Jedals to complete the event)
+You need a total of 640 Jedals to complete the event
 Just to be safe use in a private server!!
 
 Made with ❤, by Lilith // wiird2012
