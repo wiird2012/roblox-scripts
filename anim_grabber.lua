@@ -1,13 +1,4 @@
---[[
-    ____  __           __  _             _____ __                
-   / __ )/ /___ ______/ /_(_)___  ____ _/ ___// /_____  ____  ___
-  / __  / / __ `/ ___/ __/ / __ \/ __ `/\__ \/ __/ __ \/ __ \/ _ \
- / /_/ / / /_/ (__  ) /_/ / / / / /_/ /___/ / /_/ /_/ / / / /  __/
-/_____/_/\__,_/____/\__/_/_/ /_/\__, //____/\__/\____/_/ /_/\___/
-             animation grabber /____/ Made by BlastingStone#8878
-                           
-]]--
-
+--Old but tested & working 30/12/2025
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -18,11 +9,10 @@ local copytoclip = Instance.new("TextButton")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "simple anim-grabber";
-    Text = "Made by BlastingStone (V3rm UID: 464205)";
-    Icon = "rbxassetid://4492172626";
+    Text = "Made by BlastingStone, Archived by Lilith";
+    Icon = "rbxassetid://12031808277";
     Duration = 20;
-    Button1 = "ok";
-    Button2 = "idc stfu";
+    Button1 = "Close";
 })
 
 ScreenGui.Parent = game.CoreGui
@@ -43,7 +33,7 @@ credits.BackgroundTransparency = 1.000
 credits.Position = UDim2.new(0.168316826, 0, 0.0500000045, 0)
 credits.Size = UDim2.new(0, 200, 0, 50)
 credits.Font = Enum.Font.Bodoni
-credits.Text = "simple anim grabber                                      BlastingStone#8878"
+credits.Text = "simple anim grabber"
 credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 credits.TextSize = 14.000
 credits.TextWrapped = true
