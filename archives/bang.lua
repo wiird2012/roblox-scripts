@@ -1,3 +1,5 @@
+--Old, untested and not mine
+
 -- BANG SCRIPT
 -- Inspired by CJ (murdaware/ou1z)
 -- Made by AnthonyIsntHere
