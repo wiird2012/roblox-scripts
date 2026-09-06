@@ -1,19 +1,11 @@
---Old but tested & working 30/12/2025
+--Not mine. Old but tested & fixed @ 30/12/2025
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
-local credits = Instance.new("TextLabel")
+local header = Instance.new("TextLabel")
 local animid = Instance.new("TextBox")
 local grab = Instance.new("TextButton")
 local copytoclip = Instance.new("TextButton")
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "simple anim-grabber";
-    Text = "Made by BlastingStone, Archived by Lilith";
-    Icon = "rbxassetid://12031808277";
-    Duration = 20;
-    Button1 = "Close";
-})
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -26,17 +18,17 @@ Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.Position = UDim2.new(0.451488942, 0, 0.467422098, 0)
 Main.Size = UDim2.new(0, 303, 0, 320)
 
-credits.Name = "credits"
-credits.Parent = Main
-credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-credits.BackgroundTransparency = 1.000
-credits.Position = UDim2.new(0.168316826, 0, 0.0500000045, 0)
-credits.Size = UDim2.new(0, 200, 0, 50)
-credits.Font = Enum.Font.Bodoni
-credits.Text = "simple anim grabber"
-credits.TextColor3 = Color3.fromRGB(0, 0, 0)
-credits.TextSize = 14.000
-credits.TextWrapped = true
+header.Name = "header"
+header.Parent = Main
+header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+header.BackgroundTransparency = 1.000
+header.Position = UDim2.new(0.168316826, 0, 0.0500000045, 0)
+header.Size = UDim2.new(0, 200, 0, 50)
+header.Font = Enum.Font.Bodoni
+header.Text = "simple anim grabber"
+header.TextColor3 = Color3.fromRGB(0, 0, 0)
+header.TextSize = 14.000
+header.TextWrapped = true
 
 animid.Name = "animid"
 animid.Parent = Main
